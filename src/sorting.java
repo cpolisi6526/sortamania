@@ -3,8 +3,7 @@ public class sorting {
     public static int binarySearch(int[] elements, int target) {
         int length = elements.length;
         int index =  (int)(elements.length/ 2);
-        int x=0;
-        while (x<elements.length) {
+        for (int x=0; x<elements.length; x++) {
             if (target == elements[index]) {
                 return index;
             }
@@ -18,7 +17,6 @@ public class sorting {
                     length = (int) (length / 2);
                 }
             }
-            x++;
         }
         return -1;
     }
